@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <FORM id="my_form" name="user_data" method="get" action="form.php" > 
+        <H1 align="center">Заполните анкету</H1>
+        <fieldset>
+            <legend>Личные данные</legend>
+            <INPUT required pattern="[А-Яа-я]{1,25}" TYPE="text" placeholder="Фамилия" ID="text" NAME="famil" autofocus> <br>
+            <INPUT required pattern="[А-Яа-я]{1,20}" TYPE="text" placeholder="Имя" ID="text" NAME="ima" > <br>
+            <INPUT required pattern="[А-Яа-я]{1,24}" TYPE="text" placeholder="Отчество" ID="text" NAME="Otchestvo" >
+        <fieldset>
+            <legend>Паспортные данные</legend>
+            <br>
+            <br>
+            <input placeholder="AA" type="text" name="text[]" pattern="[A-Z]{2}" size="2" required>
+            <input placeholder="1234567" type="text" name="text[]" pattern="[0-7]{7}" size="7" required>
+        </fieldset>
+        <fieldset>
+            <legend>Дата рождения</legend>
+            <input size="4" type="text" name="text[]" placeholder="2000" pattern="[0-9]{1,4}" required><br>
+            
+            <select name="list" id="list">  <br>
+                <option value="1">Декабрь</option> <br>
+                <option value="2">Ноябрь</option> <br>
+                <option value="3">Октябрь</option> <br>
+                <option value="4">Сентябрь</option> <br>
+                <option value="5">Август</option> <br>
+                <option value="6">Июль</option> <br>
+                <option value="7">Июнь</option> <br>
+                <option value="8">Май</option> <br>
+                <option value="9">Апрель</option> <br>
+                <option value="10">Март</option> <br>
+                <option value="11">Февраль</option> <br>
+                <option value="0" selected>Январь</option>
+            </select> <br>
+            <input type="number" name="text[]" pattern="[0-9]{1,31}"> 
+            
+        </fieldset>
+        <select name="text[]" type="text" >
+            <option value="1">Япония</option>
+            <option value="2">Южная корея</option>
+            <option value="3">РФ</option>
+            <option value="4">УК</option>
+            <option value="0"selected>РБ</option>
+        </select> 
+        <br>
+        Адрес: <br>
+        <textarea name="text" lang="ru"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Интересы</legend>
+            <fieldset>
+                <legend>array: Хобби</legend>
+                <label>
+                    <input type="checkbox" name="hobby[]"> Рыбалка
+               </label><br>
+               <label>
+                    <input type="checkbox" name="hobby[]"> Астрономия
+               </label><br>
+               <label>
+                     <input type="checkbox" name="hobby[]"> Дайвинг
+               </label><br>
+               <label>
+                <input type="checkbox" name="hobby[]"> Марки
+                </label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Домашние животные</legend><br>
+                <select name="text[]" type="text" size="12" multiple>
+                    <optgroup label="Попугаи">
+                        <option value="1">Волнистый</option>
+                        <option value="2">Ара</option>
+                        <option value="3">Неразлучник</option>
+                    </optgroup>
+                    <optgroup label="Рыба">
+                        <option value="4">Караси</option>
+                        <option value="5">Окуни</option>
+                        <option value="6">Осётр</option>
+                    </optgroup>
+                    <optgroup label="Птицы">
+                        <option value="7">Стая ворон</option>
+                        <option value="8">Аист</option>
+                        <option value="9">Археоптерикс</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Данные для входа и восстановления пароля</legend>
+            <input name="text[]" type="text" placeholder="Логин" required pattern="[A-Za-z]{5,20}" > <br>
+            <input name="text[]" type="text" placeholder="Пароль" autocomplete="off" required rattern="[A-Za-z{10,20}]"> 
+        </fieldset>
+        <fieldset>
+            <legend>Координаты:</legend>
+            <input name="text[]" type="text" placeholder="введите адрес почты"><br>
+            <input name="text[]" type="text" placeholder="введите адрес сайта">
+        </fieldset>
+        <fieldset>
+            <legend>Цифры</legend>
+            <input name="text[]" type="number" pattern="[0-9]{-2.5,2.5}"><br>
+            <input type="range" min="1" max="10"> 
+        </fieldset>
+        <fieldset>
+            <legend>Кнопки управления</legend>
+            <input type="submit" value="Отправить"> 
+            <input type="reset" value="Сбросить"> <br>
+            <input type="image" src="email.jpg"> - при нажатии на эту кнопку ничего не происходит <br>
+        </fieldset>
+    </FORM>
+</body>
+</html>

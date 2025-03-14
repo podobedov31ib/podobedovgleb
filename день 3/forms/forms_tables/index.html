@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <table width="700px">
+            <tr>
+                <th>Простая форма с поиском вариантами:</th>
+                <th>Простая форма с поиском вариантами:</th>
+            <tr>
+                <tr>
+                    <td>
+                        <form id="add_form1" name="userdate" method="get" action="form.php">
+                        <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input name="text[]" type="text" pattern="{1,10}" required> <input name="text[]" type="button" value="Искать"> <br>
+                        <label>
+                        <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked> на сайте 
+                        </label> 
+                        <label> 
+                        <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0"> в google <br>
+                        </label>     
+                        </fieldset></form>
+                    </td>
+                    <td>
+                        <form id="add_form1" name="userdate" method="get" action="form.php">
+                            <fieldset>
+                            <legend>Строка поиска</legend>
+                            <input name="text[]" type="text" pattern="{1,10}" required autofocus>* <input name="text[]" type="button" value="Искать"> <br>
+                            <label>
+                            <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked> на сайте 
+                            </label> 
+                            <label> 
+                            <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0"> в google <br>
+                            </label>   
+                            </fieldset></form>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Простая форма авторизации:</th>
+                    <th>Опрос (голосование):</th>
+                </tr>
+                <tr>
+                    <td>
+                        <form id="add_form1" name="userdate" method="get" action="form.php">
+                        <fieldset>
+                            <legend>Авторизируетесь</legend>
+                            <input name="text[]" type="text" required>* Логин <br>
+                            <input name="text[]" type="text" required>* Пароль <br>
+                            <label>  
+                                <input type="checkbox" name=“val_1" id="chbox1" checked>  Оставаться в системе <br>
+                            </label>
+                            <input type="submit" value="Войти"> <br>
+                        </fieldset>
+                        </form> 
+                    </td>
+                    <td>
+                        <form id="add_form1" name="userdate" method="get" action="form.php">
+                        <fieldset>
+                            <legend>Как вам?</legend>
+                            <label>
+                                <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked> ничего <br>
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked> неплохо <br>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked> хорошо <br>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked> супер <br>
+                                            </label>
+                        <input type="hidden" name="data_voite" value="2013.12.31" >
+                        <input name="text[]" type="button" value="Отправить"> 
+                        </fieldset>
+                        </form>   
+                    </td>
+                </tr>
+                <tr>
+                    <th>Отзыв:</th>
+                    <th>Выпадающий и мульти списки:</th>
+                </tr>
+                <tr>
+                    <td>
+                        <form id="add_form1" name="userdate" method="get" action="form.php">
+                        <fieldset>
+                            <legend>Оставьте Ваш отзыв</legend>
+                            <input name="text[]" type="text" required>* Имя <br>
+                            <input name="text[]" type="email" required >* e-mail <br>
+                            <textarea name="text[]" lang="ru">Форма отправки</textarea> <br>
+                            <input name="text[]" type="button" value="Отправить"> <br>
+                        </fieldset>
+                        </form>  
+                    </td>
+                    <td>
+                        <form id="add_form1" name="userdate" method="get" action="form.php">
+                        <fieldset>
+                            <legend>Города РБ</legend>
+                            <select name="list" id="list">
+                                <option value="1" selected>Брест</option>
+                            </select> 
+                            <select name="list" id="list" size="8">
+                                <optgroup label="Города РБ">
+                                    <option value="1">Брест</option>
+                                    <option value="2">Минск</option>
+                                    <option value="3">Витебск</option>
+                                </optgroup>
+                                <optgroup label="Города России">
+                                    <option value="4">Москва</option>
+                                    <option value="5">Рязань</option>
+                                    <option value="6">Магадан</option>
+                                </optgroup>
+                            </select>
+                            <input name="text[]" type="button" value="Ок">
+                        </fieldset>
+                        </form>  
+                    </td>
+                </tr>
+                <tr>
+                    <th>Загрузка файла на сервер:</th>
+                    <th>Валидация данных HTML5:</th>
+                </tr>
+                <tr>
+                    <td>
+                        <form id="add_form1" name="userdate" method="get" action="form.php" enctype="multipart/form-data">
+                        <fieldset>
+                            <legend>Upload</legend>
+                            Файл: <br>
+                            <input type="file" name="file_Field" dir="ltr"> <br>
+                            Срок хранения (года): <br>
+                            <input name="text[]" type="text"> <input type="button" value="загрузить"> <br>
+                        </fieldset>
+                        </form>   
+                    </td>
+                    <td>
+                        <form id="add_form1" name="userdate" method="get" action="form.php">
+                            <fieldset>
+                                <legend>Строка поиска</legend>
+                                <input name="text[]" type="text" pattern="[А-Яа-я]" placeholder="Только русские буквы"> <br>
+                            <input type="tel" name="text[]" placeholder="+375-29-1234567"> <br>
+                            <input name="text[]" type="button" value="Проверить">
+                            </fieldset>
+                        </form>   
+                    </td>
+                </tr>
+        </form>
+       </tr> 
+    </table>
+</body>
+</html>
